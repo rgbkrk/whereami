@@ -10,8 +10,6 @@
   "license": "Apache2",
   "dependencies": {
     "geojson": "~0.1.5",
-    "geo": "0.0.3",
-    "prompt": "~0.2.12",
     "node-geocoder": "~2.4.0"
   }
 }
