@@ -35,7 +35,7 @@ geocoder.geocode(address)
   .then(function(res) {
 
     GeoJSON.parse(res,
-                {Point: ['lat', 'lng']},
+                {Point: ['latitude', 'longitude']},
                 writeGeoJSON);
 
   }, function(err) {
