@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-98.51480040000001,29.5807579]},"properties":{}}]}
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{},"properties":{"latitude":29.5701016,"longitude":-98.3281128,"country":"United States","city":"Schertz","state":"Texas","stateCode":"TX","zipcode":"78154","streetName":"Agora Parkway","streetNumber":"8235","countryCode":"US"}}]}
