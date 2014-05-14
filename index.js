@@ -14,6 +14,7 @@ var pointFile = "most-recent.geojson";
 // Get the address from the user
 var address = process.argv[2];
 
+// Writes GeoJSON out to the pointFile
 var writeGeoJSON = function(geojson) {
   var geostring = JSON.stringify(geojson);
   console.log("GeoJSON being written: ");
@@ -28,10 +29,10 @@ var writeGeoJSON = function(geojson) {
   });
 };
 
+// Workhorse
+// Address->GeoJSON->pointFile
 geocoder.geocode(address)
   .then(function(res) {
-    lat = res[0]['latitude'];
-    lon = res[0]['longitude'];
 
     GeoJSON.parse(res,
                 {Point: ['lat', 'lng']},
