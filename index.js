@@ -33,7 +33,7 @@ geocoder.geocode(address)
     lat = res[0]['latitude'];
     lon = res[0]['longitude'];
 
-    GeoJSON.parse([{lat: lat, lng: lon}],
+    GeoJSON.parse(res,
                 {Point: ['lat', 'lng']},
                 writeGeoJSON);
 
