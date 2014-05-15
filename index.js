@@ -24,7 +24,7 @@ var writeGeoJSON = function(geojson) {
     if(err) {
         console.log(err);
     } else {
-        console.log("The file was saved!");
+        console.log("Point file saved!");
     }
   });
 };
