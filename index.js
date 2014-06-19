@@ -16,6 +16,7 @@ var address = process.argv[2];
 
 // Writes GeoJSON out to the pointFile
 var writeGeoJSON = function(geojson) {
+  geojson['user-agent'] = 'whereami';
   var geostring = JSON.stringify(geojson);
   console.log("GeoJSON being written: ");
   console.log(geostring + "\n");
@@ -33,7 +34,6 @@ var writeGeoJSON = function(geojson) {
 // Address->GeoJSON->pointFile
 geocoder.geocode(address)
   .then(function(res) {
-
     GeoJSON.parse(res,
                 {Point: ['latitude', 'longitude']},
                 writeGeoJSON);
